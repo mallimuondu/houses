@@ -1,0 +1,282 @@
+body {
+    background-color: yellow;
+
+}
+
+.hellow {
+    background-image: url(/img/img1.jpeg);
+    padding: 150px;
+    color: white;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.sky {
+    height: 40%;
+    background-color: lightblue;
+}
+
+.cloud1 {
+    position: absolute;
+    left: 0;
+    animation-name: sky;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+.cloud2 {
+    position: absolute;
+    right: 0;
+    animation-name: sky1;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+.grass {
+    height: 15%;
+    background-color: seagreen;
+}
+
+.road {
+    height: 35%;
+    background-color: black;
+    box-sizing: border-box;
+    border-top: 15px solid grey;
+    border-bottom: 15px solid grey;
+}
+
+.lines {
+
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    top: 72.5%;
+}
+
+.grass2 {
+    height: 15%;
+    background-color: seagreen;
+}
+
+.car {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 12s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.car2 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 12s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.manna {
+    position: absolute;
+    top: -180px;
+    left: 550px;
+    animation-name: manna;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+/*animation section */
+
+@keyframes drive {
+    from {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(1200px)
+    }
+
+}
+
+@keyframes manna {
+    from {
+        transform: translateY(0px)
+    }
+
+    to {
+        transform: translateY(300px)
+    }
+}
+
+@keyframes sky {
+    from {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(1200px)
+    }
+}
+
+@keyframes sky1 {
+    from {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(-1200px)
+    }
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.sky {
+    height: 40%;
+    background-color: lightblue;
+}
+
+.cloud1 {
+    position: absolute;
+    left: 0;
+    animation-name: sky;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+.cloud2 {
+    position: absolute;
+    right: 0;
+    animation-name: sky1;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+.grass {
+    height: 15%;
+    background-color: seagreen;
+}
+
+.road {
+    height: 35%;
+    background-color: black;
+    box-sizing: border-box;
+    border-top: 15px solid grey;
+    border-bottom: 15px solid grey;
+}
+
+.lines {
+
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    top: 72.5%;
+}
+
+.grass2 {
+    height: 15%;
+    background-color: seagreen;
+}
+
+.car {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 12s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.car2 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 12s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.manna {
+    position: absolute;
+    top: -180px;
+    left: 550px;
+    animation-name: manna;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+/*animation section */
+
+@keyframes drive {
+    from {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(1200px)
+    }
+
+}
+
+@keyframes manna {
+    from {
+        transform: translateY(0px)
+    }
+
+    to {
+        transform: translateY(300px)
+    }
+}
+
+@keyframes sky {
+    from {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(1200px)
+    }
+}
+
+@keyframes sky1 {
+    from {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(-1200px)
+    }
+}
