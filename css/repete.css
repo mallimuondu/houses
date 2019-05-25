@@ -1,13 +1,20 @@
+body {
+    background-color: green;
+}
+
 .clock {
     border-radius: 50%;
-    height:400px;
+    height: 400px;
     width: 400px;
-    background-color: red;
+    background-color: lightgrey;
     text-align: circle;
     margin: auto;
     display: block;
     border: 1px solid green;
-
+    box-shadow: 0px 0px 20px grey;
+    border-bottom-style: groove;
+    border-width: 10px;
+    border-color: green;
 }
 
 .dot {
@@ -18,39 +25,141 @@
     border-radius: 50%;
     position: relative;
     top: 220px;
-    left:  220px;
+    left: 220px;
     margin-top: -50px;
     margin-left: -50px;
+        box-shadow: 0px 0px 50px grey;
+ 
 }
-.second-hand{
-  width: 190px;
+
+.second-hand {
+    width: 190px;
     height: 2px;
     position: absolute;
-    
-    background-color: gold;
-    margin-top:190px; 
+
+    background-color: yellow;
+    margin-top: 190px;
     margin-left: 200px;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     transform-origin: 0%;
-    
-}
-.minute-hand{
-    width: 150px;
+    animation-name: second-hand-anim;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
     height: 3px;
-    background-color: black;
+animation-timing-function: linear;
     margin-top: 190px;
     margin-left: 200px;
     transform: rotate(195deg);
-         transform-origin: 0%;
-}
-  .hour-hand {
-    width: 100px;
-    height: 6px;
-    background-color: pink;
-      margin-top:1px; 
-    margin-left: 200px;
+    transform-origin: 0%;
     
-    transform: rotate(300deg);
+}
+
+.minute-hand {
+    width: 150px;
+    height: 2px;
+    position: absolute;
+
+    background-color: red;
+    margin-top: 190px;
+    margin-left: 200px;
+    transform: rotate(-90deg);
+    transform-origin: 0%;
+    animation-name: second-hand-anim;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    height: 3px;
+animation-timing-function: linear;
+    margin-top: 190px;
+    margin-left: 200px;
+    transform: rotate(195deg);
     transform-origin: 0%;
 }
 
+.hour-hand {
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    margin-top: 1px;
+    margin-left: 200px;
+animation-timing-function: linear;
+    transform: rotate(300deg);
+    transform-origin: 0%;
+    animation-name: hour-hand-anim;
+    animation-duration: 216000s;
+    animation-iteration-count: infinite;
+    height: 3px;
+
+    margin-top: 190px;
+    margin-left: 200px;
+    transform: rotate(195deg);
+    transform-origin: 0%;
+
+}
+
+/*animating second hand*/
+@keyframes second-hand-anim {
+    0% {
+        transform: rotate(-90deg);
+            
+    }
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+/* Minute hand animation*/
+@keyframes minute-hand-anim {
+    0% {
+        transform: rotate(-90deg)
+    }
+
+    25% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(90deg)
+    }
+
+    75% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(270deg)
+    }
+}
+/*hour-hand-animation*/
+@keyframes hour-hand-anim {
+    0% {
+        transform: rotate(-90deg)
+    }
+
+    25% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(90deg)
+    }
+
+    75% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(270deg)
+    }
+}
